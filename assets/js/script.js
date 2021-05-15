@@ -92,6 +92,10 @@ function checkAnswer(event) {
             correctCount++;
         } else {
             questionResultEl.textContent = "Incorrect";
+            time -= 15 //is same as time = time-15
+            if (time <0){
+                endQuiz()
+            }
         }
     }
   //  setTimeout(nextQuestion, 2000);
