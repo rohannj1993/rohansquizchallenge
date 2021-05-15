@@ -96,11 +96,16 @@ function checkAnswer(event) {
     }
   //  setTimeout(nextQuestion, 2000);
   questionIndex++;
-  renderQuestion();
+  if (questionIndex === questions.length){
+  endQuiz()
+  } else {
+      renderQuestion();
+
+  }
 
 }
 
-optionListEl.addEventListener("click", checkAnswer);
+// optionListEl.addEventListener("click", checkAnswer);
 
 
 
