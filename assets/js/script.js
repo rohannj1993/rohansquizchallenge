@@ -73,16 +73,6 @@ function renderQuestion() {
 }
   startButton.addEventListener("click",startQuiz)
 
-//   function nextQuestion() {
-//       questionIndex++;
-//       renderQuestion();
-//     }
-    
-// function startPage() {
-//     btn = document.createElement("button");
-//     btn.textContent = "Start Quiz";
-// }
-
 
 function checkAnswer(event) {
     if (event.target.matches("button")) {
@@ -98,7 +88,7 @@ function checkAnswer(event) {
             }
         }
     }
-  //  setTimeout(nextQuestion, 2000);
+  
   questionIndex++;
   if (questionIndex === questions.length){
   endQuiz()
@@ -108,10 +98,6 @@ function checkAnswer(event) {
   }
 
 }
-
-// optionListEl.addEventListener("click", checkAnswer);
-
-
 
 function endQuiz() {
     clearInterval(intervalId);
