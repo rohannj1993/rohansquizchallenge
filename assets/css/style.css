@@ -4,9 +4,13 @@ body {
 .button{
     font-size: 16px;
     padding: 3rem;
-    width: 40rem;
     text-align: center;
     margin-bottom: 1rem;
-    color: lightcoral;
-    background: rgb(red, green, blue);
+    color: darkred;
+    
 } ;
+
+.hide{
+display: none;
+
+}
